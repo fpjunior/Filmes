@@ -27,7 +27,7 @@ export class FilmesListComponent implements OnInit {
     })
   }
 
-  // Delete employee
+  // Delete filme
   deleteFilme(id) {
     if (window.confirm('Tem certeza que você quer deletar?')){
       this.restApi.deleteFilme(id).subscribe(data => {

@@ -15,9 +15,6 @@ export class RestApiService {
 
   constructor(private http: HttpClient) { }
 
-  /*========================================
-    CRUD Methods for consuming RESTful API
-  =========================================*/
 
   // Http Options
   httpOptions = {
@@ -26,7 +23,7 @@ export class RestApiService {
     })
   }  
 
-  // HttpClient API get() method => Fetch employees list
+  // HttpClient API get() method => Fetch filmes list
   getFilmes(): Observable<Filme> {
     return this.http.get<Filme>(this.apiURL + '/filmes')
     .pipe(
@@ -35,7 +32,7 @@ export class RestApiService {
     )
   }
 
-  // HttpClient API get() method => Fetch employee
+  // HttpClient API get() method => Fetch filme
   getFilme(id): Observable<Filme> {
     return this.http.get<Filme>(this.apiURL + '/filmes/' + id)
     .pipe(

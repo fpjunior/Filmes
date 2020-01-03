@@ -17,10 +17,7 @@ export class FilmeCreateComponent implements OnInit {
   ) { }
 
   ngOnInit() { }
-  
-  
-   
-
+ 
   addFilmes(dataFilme) {
     this.restApi.createFilme(this.filmeDetails).subscribe((data: {}) => {
       this.router.navigate(['/filmes-list'])
