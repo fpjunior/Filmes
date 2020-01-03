@@ -7,6 +7,10 @@ This project was built with Angular CLI version 7.2.3.
 
 Run `npm install` to install required dependencies.
 
+## Inicializando o Servidor
+
+Inicie o servidor json que se encontra na pasta server.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
