@@ -1,0 +1,48 @@
+<div class="container custom-container-2">
+
+  <!-- Só mostra quando não há filmes cadastrado -->
+  <div class="no-data text-center" *ngIf="Filme.length == 0">
+    <p>Não há Filmes adicionado ainda ou verifique o status do servidor!</p>
+
+    <button class="btn btn-outline-primary" routerLink="/create-filme">ADICIONAR FILMES</button>
+  </div>
+  
+  <div class="card">
+    <div class="header">
+      
+      <ol class="breadcrumb float-left">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+       
+      </ol>
+    </div>
+  <!-- Tabela de Filmes, não ficará visível caso não haja filmes  cadastrado -->
+  <div *ngIf="Filme.length !== 0">
+    <h3 class="mb-3 text-center">LISTA DE FILMES</h3>
+
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped table-hover">
+                <thead>
+          <tr>
+            <th scope="col">NOME</th>
+            <th scope="col">GÊNERO</th>
+            <th scope="col">ESTRELA</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr *ngFor="let filme of Filme">
+            <td>{{filme.nome}}</td>
+            <td>{{filme.genero}}</td>
+            <td>{{filme.estrela}}</td>
+            <td>
+              <span class="btn btn-info" routerLink="/filme-edit/{{filme.id}}">EDITAR</span> 
+              <button class="btn btn-danger ml-2" (click)="deleteFilme(filme.id)">DELETAR </button>
+                </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
