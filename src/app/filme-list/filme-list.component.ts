@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestApiService } from "../shared/rest-api.service";
 import { Validators } from '@angular/forms';
+import { Filme } from '../shared/filme';
 
 @Component({
   selector: 'app-filmes-list',
@@ -32,6 +33,7 @@ export class FilmesListComponent implements OnInit {
     if (window.confirm('Tem certeza que você quer deletar?')){
       this.restApi.deleteFilme(id).subscribe(data => {
         this.loadFilmes()
+        
       })
     }
   }  

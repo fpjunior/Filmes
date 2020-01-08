@@ -1,3 +1,5 @@
+
+
 <div class="container custom-container">
   
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -6,8 +8,9 @@
     <h3 class="mb-3 text-center">CADASTRAR FILME</h3>
 
     <div class="form-group">
-      <input type="text" [(ngModel)]="filmeDetails.nome" class="form-control" placeholder="Nome">
+      <input type="text " [(ngModel)]="filmeDetails.nome" class="form-control " placeholder="Nome">
     </div>
+
 
     <div class="form-group">
       <input type="text" [(ngModel)]="filmeDetails.genero" class="form-control" placeholder="Gênero">
@@ -16,12 +19,14 @@
     <div class="form-group">
       <input type="text" [(ngModel)]="filmeDetails.estrela" class="form-control" placeholder="Estrela">
     </div>
+    <div class="form-group">
+      <input type="text" [(ngModel)]="filmeDetails.anolanc" class="form-control" placeholder="Ano de Lancamento">
+    </div>
 
     <div class="form-group">
       <button class="btn btn-success btn-lg btn-block" (click)="addFilmes()">ADICIONAR FILME</button>
       <button class="btn btn-secondary btn-lg btn-block" routerLinkActive="active" routerLink="/filmes-list">CANCELAR</button>
-     
-      
+          
     </div>
 
   </div>

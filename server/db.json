@@ -3,20 +3,23 @@
     {
       "id": 2,
       "nome": "PERDIDO EM MARTE",
-      "genero": "FICAÇÃO",
-      "estrela": "5"
+      "genero": "FICÇÃO",
+      "estrela": "6",
+      "anolanc": "2000"
     },
     {
       "nome": "A LAGOA AZUL",
-      "estrela": "4",
+      "estrela": "8",
       "id": 3,
-      "genero": "AVENTURA"
+      "genero": "AVENTURA",
+      "anolanc": "2012"
     },
     {
       "nome": "AS AVENTURAS DE MANDAGASCÁ",
       "genero": "AVENTURA",
       "estrela": "1",
-      "id": 5
+      "id": 5,
+      "anolanc": "2017"
     },
     {
       "nome": "MINHA MÃE É UM PEÇA",
@@ -25,41 +28,105 @@
       "name": "tropa de eleite",
       "email": "ação",
       "phone": "5",
-      "id": 6
-    },
-    {
-      "nome": "SE BEBER NÃO CASE",
-      "genero": "COMÉDIA",
-      "estrela": "4",
-      "name": "tropa de eleite",
-      "email": "ação",
-      "phone": "5",
-      "id": 7
+      "id": 6,
+      "anolanc": "2018"
     },
     {
       "nome": "ESQUADRÃO 6",
       "name": "weqwq",
       "genero": "AÇÃO",
       "estrela": "5",
-      "id": 9
+      "id": 9,
+      "anolanc": "2019"
     },
     {
       "nome": "MARLEY E EU",
       "genero": "AVENTURA",
       "estrela": "2",
-      "id": 12
+      "id": 12,
+      "anolanc": "2003"
     },
     {
       "nome": "EFEITO BORBOLETA",
       "genero": "FICÇÃO",
       "estrela": "6",
-      "id": 13
+      "id": 13,
+      "anolanc": "2012"
     },
     {
       "nome": "DE VOLTA AO FUTURO",
       "genero": "FICÇÃO",
       "estrela": "5",
-      "id": 14
+      "id": 14,
+      "anolanc": "2008"
+    },
+    {
+      "nome": "VELOZES E FURIOSOS",
+      "genero": "AÇÃO",
+      "estrela": "8",
+      "id": 15,
+      "anolanc": "2015"
+    },
+    {
+      "nome": "INTERESTELAR",
+      "genero": "FICÇÃO",
+      "estrela": "8",
+      "id": 16
+    },
+    {
+      "nome": "STAR WARS",
+      "genero": "AVENTURA",
+      "estrela": "9",
+      "id": 17
+    },
+    {
+      "nome": "A CASA ASSOMBRADA",
+      "genero": "SUSPENSE",
+      "estrela": "7",
+      "id": 18
+    },
+    {
+      "nome": "CAPITÃO AMÉRICA",
+      "genero": "AÇÃO",
+      "estrela": "5",
+      "id": 19
+    },
+    {
+      "nome": "HOMEM DE FERRO",
+      "genero": "AÇÃO",
+      "estrela": "7",
+      "id": 20
+    },
+    {
+      "nome": "HOMEM ARANHA",
+      "genero": "AVENTURA",
+      "estrela": "7",
+      "id": 21
+    },
+    {
+      "nome": "SE BEBER NÃO CASE",
+      "genero": "COMÉDIA",
+      "estrela": "5",
+      "id": 22
+    },
+    {
+      "nome": "A CULPA É DAS ESTRELAS",
+      "genero": "ROMANCE",
+      "estrela": "7",
+      "id": 23
+    },
+    {
+      "nome": "VENCENDO GIGANTES",
+      "genero": "SUPERAÇÃO",
+      "estrela": "8",
+      "id": 24
+    },
+    {
+      "nome": "PERDIDO NO JAPÃO",
+      "genero": "AÇÃO",
+      "estrela": "8",
+      "anolanc": "21021987",
+      "id": 25
     }
   ]
 }

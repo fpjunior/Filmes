@@ -16,6 +16,7 @@ export class FilmeCreateComponent implements OnInit {
     public router: Router
   ) { }
 
+  
   ngOnInit() { }
  
   addFilmes(dataFilme) {

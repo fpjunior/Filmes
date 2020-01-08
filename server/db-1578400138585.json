@@ -1,0 +1,65 @@
+{
+  "filmes": [
+    {
+      "id": 2,
+      "nome": "PERDIDO EM MARTE",
+      "genero": "FICAÇÃO",
+      "estrela": "6"
+    },
+    {
+      "nome": "A LAGOA AZUL",
+      "estrela": "8",
+      "id": 3,
+      "genero": "AVENTURA"
+    },
+    {
+      "nome": "AS AVENTURAS DE MANDAGASCÁ",
+      "genero": "AVENTURA",
+      "estrela": "1",
+      "id": 5
+    },
+    {
+      "nome": "MINHA MÃE É UM PEÇA",
+      "genero": "COMÉDIA",
+      "estrela": "4",
+      "name": "tropa de eleite",
+      "email": "ação",
+      "phone": "5",
+      "id": 6
+    },
+    {
+      "nome": "SE BEBER NÃO CASE",
+      "genero": "COMÉDIA",
+      "estrela": "4",
+      "name": "tropa de eleite",
+      "email": "ação",
+      "phone": "5",
+      "id": 7
+    },
+    {
+      "nome": "ESQUADRÃO 6",
+      "name": "weqwq",
+      "genero": "AÇÃO",
+      "estrela": "5",
+      "id": 9
+    },
+    {
+      "nome": "MARLEY E EU",
+      "genero": "AVENTURA",
+      "estrela": "2",
+      "id": 12
+    },
+    {
+      "nome": "EFEITO BORBOLETA",
+      "genero": "FICÇÃO",
+      "estrela": "6",
+      "id": 13
+    },
+    {
+      "nome": "DE VOLTA AO FUTURO",
+      "genero": "FICÇÃO",
+      "estrela": "5",
+      "id": 14
+    }
+  ]
+}

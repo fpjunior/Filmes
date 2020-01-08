@@ -1,4 +1,4 @@
-<div class="container custom-container-2">
+<div class="container custom-container-4">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
       <ul class="navbar-nav mr-auto">
                
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-4 my-lg-0">
         <input class="form-control mr-sm-2" type="Pesquisar" placeholder="pesquisar" aria-label="Pesquisar">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
@@ -34,13 +34,14 @@
   <div *ngIf="Filme.length !== 0">
     <h3 class="mb-3 text-center">LISTA DE FILMES</h3>
 
-    <div class="col-md-12">
+    <div class="col-md-19">
       <table class="table table-bordered table-striped table-hover">
                 <thead>
           <tr>
             <th scope="col">NOME</th>
             <th scope="col">GÊNERO</th>
             <th scope="col">ESTRELA</th>
+            <th scope="col">ANO DE LANÇAMENTO</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -49,6 +50,8 @@
             <td>{{filme.nome}}</td>
             <td>{{filme.genero}}</td>
             <td>{{filme.estrela}}</td>
+            <td>{{filme.anolanc}}</td>
+
             <td>
               <span class="btn btn-info" routerLink="/filme-edit/{{filme.id}}">EDITAR</span> 
               <button class="btn btn-danger ml-2" (click)="deleteFilme(filme.id)">DELETAR </button>
