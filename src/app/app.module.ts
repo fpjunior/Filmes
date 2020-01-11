@@ -15,13 +15,16 @@ import { FormsModule } from '@angular/forms';
 import { FilmeCreateComponent } from './filme-create/filme-create.component';
 import { FilmeEditComponent } from './filme-edit/filme-edit.component';
 import { FilmesListComponent } from './filme-list/filme-list.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilmeCreateComponent,
     FilmeEditComponent,
-    FilmesListComponent
+    FilmesListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { FilmesListComponent } from './filme-list/filme-list.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 

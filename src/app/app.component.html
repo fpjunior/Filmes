@@ -1,13 +1,22 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">GERENCIAR FILMES</h5>
 
+
+
+<div *ngIf="mostrarMenu" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">GERENCIAR FILMES</h5>
+  
+ 
   <nav class="my-2 my-md-0 mr-md-3">
     
     <a class="btn btn-outline-primary btn-lg" routerLinkActive="active" routerLink="/create-filme">CADASTRAR FILME</a>
   </nav>
+  <nav>
   <a class="btn btn-outline-primary btn-lg" routerLinkActive="active" routerLink="/filmes-list">LISTA DE FILMES</a>
-  
-</div>
-
+  </nav>
+  <nav class="my-2 my-md-0 mr-md-3"></nav>
+  <nav>
+  <a class="btn btn-outline-primary btn-lg" routerLinkActive="active" routerLink="">SAIR</a>
+  </nav>
+  </div>
 <router-outlet></router-outlet>
+<app-login></app-login>
 

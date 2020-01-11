@@ -71,19 +71,22 @@
       "nome": "INTERESTELAR",
       "genero": "FICÇÃO",
       "estrela": "8",
-      "id": 16
+      "id": 16,
+      "anolanc": "2028"
     },
     {
       "nome": "STAR WARS",
       "genero": "AVENTURA",
       "estrela": "9",
-      "id": 17
+      "id": 17,
+      "anolanc": "2018"
     },
     {
       "nome": "A CASA ASSOMBRADA",
       "genero": "SUSPENSE",
       "estrela": "7",
-      "id": 18
+      "id": 18,
+      "anolanc": "2018"
     },
     {
       "nome": "CAPITÃO AMÉRICA",

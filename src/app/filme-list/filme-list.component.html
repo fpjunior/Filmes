@@ -22,14 +22,6 @@
     <button class="btn btn-outline-primary" routerLink="/create-filme">ADICIONAR FILMES</button>
   </div>
   
-  <div class="card">
-    <div class="header">
-      
-      <ol class="breadcrumb float-left">
-        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
-       
-      </ol>
-    </div>
   <!-- Tabela de Filmes, não ficará visível caso não haja filmes  cadastrado -->
   <div *ngIf="Filme.length !== 0">
     <h3 class="mb-3 text-center">LISTA DE FILMES</h3>
@@ -47,6 +39,12 @@
         </thead>
         <tbody> 
           <tr *ngFor="let filme of Filme">
+           <div class="form-check">
+             <label class="form-check-label">
+               <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" unchecked>
+               
+             </label>
+           </div>
             <td>{{filme.nome}}</td>
             <td>{{filme.genero}}</td>
             <td>{{filme.estrela}}</td>
@@ -54,6 +52,7 @@
 
             <td>
               <span class="btn btn-info" routerLink="/filme-edit/{{filme.id}}">EDITAR</span> 
+              
               <button class="btn btn-danger ml-2" (click)="deleteFilme(filme.id)">DELETAR </button>
                 </td>
           </tr>

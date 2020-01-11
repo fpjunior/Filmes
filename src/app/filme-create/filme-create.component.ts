@@ -10,6 +10,7 @@ import { RestApiService } from "../shared/rest-api.service";
 export class FilmeCreateComponent implements OnInit {
 
   @Input() filmeDetails = {  }
+  
 
   constructor(
     public restApi: RestApiService, 
