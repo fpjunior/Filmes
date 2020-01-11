@@ -1,6 +1,6 @@
 # Angular 7 HttpClient
 
-This project was built with Angular CLI version 7.2.3.
+Este é um exemplo de um simples CRUD desenvolvido com Angular.
 
 Run `npm install` to install required dependencies.
 
