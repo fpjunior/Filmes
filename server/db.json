@@ -89,40 +89,18 @@
       "anolanc": "2018"
     },
     {
-      "nome": "CAPITÃO AMÉRICA",
-      "genero": "AÇÃO",
-      "estrela": "5",
-      "id": 19
-    },
-    {
-      "nome": "HOMEM DE FERRO",
-      "genero": "AÇÃO",
-      "estrela": "7",
-      "id": 20
-    },
-    {
-      "nome": "HOMEM ARANHA",
-      "genero": "AVENTURA",
-      "estrela": "7",
-      "id": 21
-    },
-    {
-      "nome": "SE BEBER NÃO CASE",
-      "genero": "COMÉDIA",
-      "estrela": "5",
-      "id": 22
-    },
-    {
       "nome": "A CULPA É DAS ESTRELAS",
       "genero": "ROMANCE",
       "estrela": "7",
-      "id": 23
+      "id": 23,
+      "anolanc": "2020"
     },
     {
       "nome": "VENCENDO GIGANTES",
       "genero": "SUPERAÇÃO",
       "estrela": "8",
-      "id": 24
+      "id": 24,
+      "anolanc": "2008"
     },
     {
       "nome": "PERDIDO NO JAPÃO",

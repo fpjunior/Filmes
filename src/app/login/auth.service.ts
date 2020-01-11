@@ -2,6 +2,7 @@ import { Injectable, Output,  } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from './usuario';
 import { EventEmitter } from '@angular/core';
+import { LoginComponent } from './login.component';
 
 @Injectable({
   providedIn: 'root'
@@ -14,15 +15,22 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario: Usuario){
-    if(usuario.nome === '123123' &&
-     usuario.senha === '123123') {
+    if(usuario.nome === '123456' &&
+     usuario.senha === '123456') {
        this.mostrarMenuEmitter.emit(true);
        this.usuarioAutenticado = true;
        
+        
       this.router.navigate(['/filmes-list']);
+      
+      
      } else{
        this.usuarioAutenticado = false;
        this.mostrarMenuEmitter.emit(false);
      }
   }
+usuarioEstaAutenticado(){
+  return this.usuarioAutenticado;
+}
+
 }
