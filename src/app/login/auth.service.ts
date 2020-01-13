@@ -15,8 +15,8 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario: Usuario){
-    if(usuario.nome === '123456' &&
-     usuario.senha === '123456') {
+    if(usuario.nome === 'qwe123' &&
+     usuario.senha === 'qwe123') {
        this.mostrarMenuEmitter.emit(true);
        this.usuarioAutenticado = true;
        

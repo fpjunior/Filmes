@@ -1,4 +1,6 @@
+
 <div class="container custom-container-4">
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +26,7 @@
   
   <!-- Tabela de Filmes, não ficará visível caso não haja filmes  cadastrado -->
   <div *ngIf="Filme.length !== 0">
+    <p>Exibindo um total de {{Filme.length}} Filmes</p>
     <h3 class="mb-3 text-center">LISTA DE FILMES</h3>
 
     <div class="col-md-19">

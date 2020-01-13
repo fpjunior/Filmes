@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
+import { Http } from '@angular/http';
+
 
 @Component({
   selector: 'app-filme-create',
@@ -8,17 +10,22 @@ import { RestApiService } from "../shared/rest-api.service";
   styleUrls: ['./filme-create.component.css']
 })
 export class FilmeCreateComponent implements OnInit {
-
+ 
   @Input() filmeDetails = {  }
   
 
   constructor(
+   
+    
     public restApi: RestApiService, 
     public router: Router
   ) { }
 
   
-  ngOnInit() { }
+  ngOnInit() {
+    
+   }
+
  
   addFilmes(dataFilme) {
     this.restApi.createFilme(this.filmeDetails).subscribe((data: {}) => {

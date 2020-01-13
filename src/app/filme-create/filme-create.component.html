@@ -7,26 +7,32 @@
   <div class="col-md-12">
     <h3 class="mb-3 text-center">CADASTRAR FILME</h3>
 
-    <div class="form-group">
+    <div class="form-group" >
       <input type="text " [(ngModel)]="filmeDetails.nome" class="form-control " placeholder="Nome">
     </div>
     
 
     <div class="form-group">
       <input type="text" [(ngModel)]="filmeDetails.genero" class="form-control" placeholder="Gênero">
+
     </div>
 
     <div class="form-group">
       <input type="text" [(ngModel)]="filmeDetails.estrela" class="form-control" placeholder="Estrela">
     </div>
-    <div class="form-group">
+    <div class="form-group" [class.has-error]="!anolanc.valid && anolanc.touched"
+    [class.has-feedback]="!anolanc.valid && anolanc.touched">
       <input type="text" [(ngModel)]="filmeDetails.anolanc" class="form-control" id="anolanc" name="anolanc" placeholder="Ano de Lancamento" 
-      required #nome>
-     
+      required #anolanc="ngModel">
+     <div *ngIf="!anolanc.valid && anolanc.touched"
+     class="alert alert-danger">o campo data é obrigatorio</div>
+      <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true" *ngIf="!anolanc.valid && anolanc.touched"></span>
+      <span id="anolanc" class="sr-only" *ngIf="!anolanc.valid && anolanc.touched">(error)</span>
+
     </div>
 
     <div class="form-group">
-      <button class="btn btn-success btn-lg btn-block" (click)="addFilmes()">ADICIONAR FILME</button>
+      <button class="btn btn-success btn-lg btn-block" (click)="addFilmes()" >ADICIONAR FILME</button>
       <button class="btn btn-secondary btn-lg btn-block" routerLinkActive="active" routerLink="/filmes-list">CANCELAR</button>
         
     </div>
