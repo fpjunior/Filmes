@@ -1,6 +1,7 @@
-# Angular 7 HttpClient
+# Gerenciar Filmes
 
-Este é um exemplo de um simples CRUD desenvolvido com Angular.
+This is an example of a simple CRUD for managing movie information
+
 
 Run `npm install` to install required dependencies.
 
