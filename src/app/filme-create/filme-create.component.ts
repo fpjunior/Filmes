@@ -25,7 +25,10 @@ export class FilmeCreateComponent implements OnInit {
   ngOnInit() {
     
    }
-
+   showFormControls(form: any) {
+    return form && form.controls['name'] &&
+    form.controls['name'].value; // Dr. IQ
+  }
  
   addFilmes(dataFilme) {
     this.restApi.createFilme(this.filmeDetails).subscribe((data: {}) => {

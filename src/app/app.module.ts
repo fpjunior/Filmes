@@ -18,6 +18,8 @@ import { FilmesListComponent } from './filme-list/filme-list.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth-guard';
+import { HighlightDirective } from './filme-list/highlight.directive';
+
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { AuthGuard } from './guards/auth-guard';
     FilmeCreateComponent,
     FilmeEditComponent,
     FilmesListComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

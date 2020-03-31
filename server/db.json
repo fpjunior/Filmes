@@ -80,41 +80,6 @@
       "estrela": "9",
       "id": 17,
       "anolanc": "2018"
-    },
-    {
-      "nome": "A CASA ASSOMBRADA",
-      "genero": "SUSPENSE",
-      "estrela": "7",
-      "id": 18,
-      "anolanc": "2018"
-    },
-    {
-      "nome": "A CULPA É DAS ESTRELAS",
-      "genero": "ROMANCE",
-      "estrela": "7",
-      "id": 23,
-      "anolanc": "2020"
-    },
-    {
-      "nome": "VENCENDO GIGANTES",
-      "genero": "SUPERAÇÃO",
-      "estrela": "8",
-      "id": 24,
-      "anolanc": "2008"
-    },
-    {
-      "nome": "PERDIDO NO JAPÃO",
-      "genero": "AÇÃO",
-      "estrela": "8",
-      "anolanc": "21021987",
-      "id": 25
-    },
-    {
-      "anolanc": "2015",
-      "nome": "perdido no espaço",
-      "genero": "ficção",
-      "estrela": "5 ",
-      "id": 26
     }
   ]
 }

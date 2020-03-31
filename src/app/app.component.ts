@@ -10,6 +10,7 @@ import { AuthService } from './login/auth.service';
 export class AppComponent {
   title = 'angular-httpclient-app';
   mostrarMenu: boolean = false;
+  color: string;
  
   constructor(private authService: AuthService){
 

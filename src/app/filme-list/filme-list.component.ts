@@ -11,10 +11,15 @@ import { Filme } from '../shared/filme';
 export class FilmesListComponent implements OnInit {
 
   Filme: any = [];
+  selectedFilme: Filme;
 
   constructor(
     public restApi: RestApiService
   ) { }
+
+  onSelect(filme: Filme): void {
+    this.selectedFilme = filme;
+  }
 
   ngOnInit() {
     this.loadFilmes()
@@ -28,11 +33,17 @@ export class FilmesListComponent implements OnInit {
     })
   }
 
+ 
+
   // Delete filme
   deleteFilme(id) {
     if (window.confirm('Tem certeza que você quer deletar?')){
       this.restApi.deleteFilme(id).subscribe(data => {
         this.loadFilmes()
+     
+          window.alert('O produto foi removido com sucesso!');
+        
+      
         
       })
     }

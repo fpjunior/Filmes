@@ -1,5 +1,6 @@
+<html >
 
-<div class="container custom-container-4">
+<div  class="container custom-container-4">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"></a>
@@ -23,13 +24,26 @@
 
     <button class="btn btn-outline-primary" routerLink="/create-filme">ADICIONAR FILMES</button>
   </div>
-  
+
+
   <!-- Tabela de Filmes, não ficará visível caso não haja filmes  cadastrado -->
   <div *ngIf="Filme.length !== 0">
-    <p>Exibindo um total de {{Filme.length}} Filmes</p>
-    <h3 class="mb-3 text-center">LISTA DE FILMES</h3>
+    <p [appHighlight]="color" >Exibindo um total de {{Filme.length}} Filmes</p>
+    <h3 [appHighlight]="color" class="mb-3 text-center">LISTA DE FILMES</h3>
+    
 
-    <div class="col-md-19">
+
+    <h4>Escolha uma cor de realce</h4>
+    <div>
+      <input  type="radio" name="colors" (click)="color='lightgreen'">Verde
+      <input type="radio" name="colors" (click)="color='yellow'">Amarelo
+      <input type="radio" name="colors" (click)="color='cyan'">Ciano
+    </div><br>
+    
+
+
+
+    <div  class="col-md-19">
       <table class="table table-bordered table-striped table-hover">
                 <thead>
           <tr>
@@ -48,11 +62,16 @@
                
              </label>
            </div>
-            <td>{{filme.nome}}</td>
-            <td>{{filme.genero}}</td>
+
+
+           
+           <a  [appHighlight]="color" routerLink="/filme-edit/{{filme.id}}" [title] = "'esse filme foi classificado com ' + filme.estrela + ' estrelas ' +  'na categoria ' + filme.genero + ' tendo sido lançado no ano de ' + filme.anolanc"  > 
+             <td >{{filme.nome}}</td>
+           </a>
+            <td >{{filme.genero }}</td>
             <td>{{filme.estrela}}</td>
             <td>{{filme.anolanc}}</td>
-
+            
             <td>
               <span class="btn btn-info" routerLink="/filme-edit/{{filme.id}}">EDITAR</span> 
               
@@ -66,3 +85,7 @@
   </div>
 
 </div>
+
+
+</html>
+
