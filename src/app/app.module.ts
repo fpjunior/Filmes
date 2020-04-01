@@ -19,7 +19,12 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth-guard';
 import { HighlightDirective } from './filme-list/highlight.directive';
-
+import { UsuarioComponent } from './usuario/usuario.component';
+import {AutoCompleteModule} from 'primeng/autocomplete';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {CalendarModule} from 'primeng/calendar';
+import {CheckboxModule} from 'primeng/checkbox';
+import {DropdownModule} from 'primeng/dropdown';
 
 
 @NgModule({
@@ -29,13 +34,19 @@ import { HighlightDirective } from './filme-list/highlight.directive';
     FilmeEditComponent,
     FilmesListComponent,
     LoginComponent,
-    HighlightDirective
+    HighlightDirective,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AutoCompleteModule,
+    BrowserAnimationsModule,
+    CalendarModule,
+    CheckboxModule,
+    DropdownModule
   ],
 
   providers: [AuthService, AuthGuard],

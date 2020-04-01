@@ -1,0 +1,17 @@
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-md-4">
+      <h3>Calendário</h3>
+     
+      <p-calendar [(ngModel)]="dateValue" dateFormat="dd.mm.yy"></p-calendar>
+
+      <h3>Boolean - {{checked}} </h3>
+<p-checkbox [(ngModel)]="checked" binary="true"></p-checkbox><br>
+<p-checkbox name="groupname" value="val1" [(ngModel)]="selectedValues"></p-checkbox><br>
+<p-checkbox name="groupname" value="o checkbox2 está marcado" [(ngModel)]="selectedValues"></p-checkbox><br>
+<p-dropdown [options]="cities1" [(ngModel)]="selectedCity1"></p-dropdown><br>
+  
+  <p>{{selectedValues}}</p>
+      
+  </div>
+
+ 
