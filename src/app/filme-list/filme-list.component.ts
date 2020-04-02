@@ -10,6 +10,7 @@ import { Filme } from '../shared/filme';
 })
 export class FilmesListComponent implements OnInit {
 
+  selectedValues: string[] = [];
   Filme: any = [];
   selectedFilme: Filme;
 

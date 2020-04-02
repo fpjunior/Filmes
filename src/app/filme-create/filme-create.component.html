@@ -7,22 +7,36 @@
   <div class="col-md-12">
     <h3 class="mb-3 text-center">CADASTRAR FILME</h3>
 
-    <div class="form-group" >
-      <input type="text " [(ngModel)]="filmeDetails.nome" class="form-control " placeholder="Nome">
-    </div>
+   
+    <span class="ui-float-label form-group">
+      <input id="float-input" size="30" pInputText type="text " [(ngModel)]="filmeDetails.nome" class="form-control ">
+      <label for="float-input">Nome</label>
+    </span>
+    <br>
     
+    <span class="ui-float-label form-group">
+      <input  id="float-input" size="30" pInputText type="text " [(ngModel)]="filmeDetails.genero" class="form-control">
+      <label for="float-input">Genero</label>
+    </span>
+    <p>Clique nas estrelas para registrar uma pontuação ao filme</p>
+    <p-rating [(ngModel)]="val3" [cancel]="false"></p-rating>
+    <br>
 
-    <div class="form-group">
-      <input type="text" [(ngModel)]="filmeDetails.genero" class="form-control" placeholder="Gênero">
+    <!-- Esse campo recebe apenas número -->
+    <span class="ui-float-label form-group">
+      <input type="text" [(ngModel)]="val3" [min]="0" [max]="100"  pInputText pKeyFilter="num" 
+      [(ngModel)]="filmeDetails.estrela" 
+      class="form-control">
+      <label for="float-input">{{val3 }} Estrelas</label>
+    </span>
 
-    </div>
+    <p-spinner size="30" [(ngModel)]="val1" [min]="1980" [max]="2030"></p-spinner>
+    
+    <br>
 
-    <div class="form-group">
-      <input type="text" [(ngModel)]="filmeDetails.estrela" class="form-control" placeholder="Estrela">
-    </div>
     <div class="form-group" [class.has-error]="!anolanc.valid && anolanc.touched"
     [class.has-feedback]="!anolanc.valid && anolanc.touched">
-      <input type="text" [(ngModel)]="filmeDetails.anolanc" class="form-control" id="anolanc" name="anolanc" placeholder="Ano de Lancamento" 
+      <input pInputText pKeyFilter="num"  type="text"  [(ngModel)]="val1" [(ngModel)]="filmeDetails.anolanc" class="form-control" id="anolanc" name="anolanc" placeholder="Ano de Lancamento" 
       required #anolanc="ngModel">
      <div *ngIf="!anolanc.valid && anolanc.touched"
      class="alert alert-danger">o campo data é obrigatorio</div>
@@ -30,15 +44,26 @@
       <span id="anolanc" class="sr-only" *ngIf="!anolanc.valid && anolanc.touched">(error)</span>
 
     </div>
-
-    <div class="form-group">
+    
+    <p-selectButton [options]="countries" [(ngModel)]="selectedCountry" optionLabel="name">
+        <ng-template let-item>
+            <div style="padding: .5em 1em">
+                <img style="vertical-align: middle; margin-right: .5em" src="assets/images/flag/{{item.value.flag}}" height="20px"/>
+                <span>{{item.name}}</span>
+            </div>
+        </ng-template>
+    </p-selectButton>
+    <p>Clique na bandeira para selecionar a nacionalidade <span style="font-weight: bold">
+      {{selectedCountry?.name}}</span>
+    </p>
+       <div class="form-group">
       <button class="btn btn-success btn-lg btn-block" (click)="addFilmes()" >ADICIONAR FILME</button>
       <button class="btn btn-secondary btn-lg btn-block" routerLinkActive="active" routerLink="/filmes-list">CANCELAR</button>
         
     </div>
 
       
-    </div>
+ 
   </div>
 
   

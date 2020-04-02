@@ -25,6 +25,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CalendarModule} from 'primeng/calendar';
 import {CheckboxModule} from 'primeng/checkbox';
 import {DropdownModule} from 'primeng/dropdown';
+import {KeyFilterModule} from 'primeng/keyfilter';
+import {SelectButtonModule} from 'primeng/selectbutton';
+import {SpinnerModule} from 'primeng/spinner';
+import {RatingModule} from 'primeng/rating';
+import {InputMaskModule} from 'primeng/inputmask';
+import {InputTextModule} from 'primeng/inputtext';
+import {SplitButtonModule} from 'primeng/splitbutton';
+
+
+
 
 
 @NgModule({
@@ -46,7 +56,13 @@ import {DropdownModule} from 'primeng/dropdown';
     BrowserAnimationsModule,
     CalendarModule,
     CheckboxModule,
-    DropdownModule
+    DropdownModule,
+    KeyFilterModule,
+    SelectButtonModule,
+    SpinnerModule,
+    RatingModule,
+    InputMaskModule,
+    InputTextModule,
   ],
 
   providers: [AuthService, AuthGuard],
