@@ -7,7 +7,9 @@ Run `npm install` to install required dependencies.
 
 ## Initialize the server
 
-start the db.json server in the ./server folder. use this command `json-server --watch server/db.json`
+start the db.json server in the ./server folder. use this command `npx json-server --watch db.json --port 3000`
+
+To login use: user=`qwe123` and password=`qwe123`
 
 ## Development server
 
